@@ -35,7 +35,7 @@
     "vue-loader-v16": "^16.0.0-beta.5.4",
     "vue-meeting-selector": "^2.0.0-beta-3",
     "vue-next-select": "^2.10.4",
-    "vue-router": "^4.0.13",
+    "vue-router": "^4.1.6",
     "vue3-carousel": "^0.1.48",
     "vuex": "^4.0.2",
     "vuex-router-sync": "^6.0.0-rc.1",

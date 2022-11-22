@@ -1,5 +1,5 @@
 <template>
-	<div v-if="isOpen === true" class="bg-grey radius-medium pd-big flex-nowrap flex">
+	<div v-if="isOpen === true" class="bg-grey radius-medium pd-big ask-to-login flex-nowrap flex">
     <button @click="isOpen = false" class="i-thin button-close-popup button"><img src="@/assets/icons/cross.svg"></button>
     <p>
       <span class="t-semi">Already registered?</span><br>

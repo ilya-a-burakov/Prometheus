@@ -25,7 +25,7 @@
 
 <script setup>
 	// Import components
-import InputPhone  from '@/components/global/elements/InputPhone.vue'
+import InputPhone  from 'prometheus/components/global/elements/InputPhone.vue'
 // Import libs
 import { computed, onMounted } from 'vue'
 import { useStore } from 'vuex'
