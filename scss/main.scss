@@ -1,0 +1,91 @@
+* {
+	box-sizing: border-box;
+	position: relative;
+}
+
+*[disabled] {
+	opacity: 0.75;
+	pointer-events: none;
+	cursor: default;
+	// background: gray;
+}
+
+button[disabled] {
+	background: grey;
+
+	&:hover {
+		background: grey;
+	}
+}
+
+html, body {
+	position: relative;
+	overflow-x: hidden;
+	width: 100%;
+	height: 100%;
+
+	background-color: white;
+	color: black; 
+	font-family: 'Avenir Next'; 
+
+	-ms-overflow-style: none;
+	// overflow-y: hidden;
+	overflow-x: hidden;
+
+	backface-visibility: hidden;
+
+	-webkit-font-smoothing: subpixel-antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	text-rendering: geometricPrecision;
+	
+	// -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-content { backface-visibility: hidden; } 
+.unactive { opacity: 0.0; }
+.hide { display: block; position: absolute; opacity: 0; pointer-events: none; }
+
+
+
+#app {
+	position: relative;
+	width: 100%;
+	scroll-margin-top: -10rem;
+	position: relative;
+	background: white;
+	z-index: 1;
+	#page-content,#page-content2 {
+		  transform-style: preserve-3d;
+
+	  perspective: 750px;
+	  perspective-origin: top;
+
+	 }
+	.scrollbar-track { z-index: 10; }
+	> div { } 
+}
+
+#search {
+	width: 100%;
+	scroll-margin-top: 4rem;
+}
+
+#page-content2 {
+	// position: relative;
+	min-height: 100vh;
+	// width: 100%;
+	background: white;	
+}
+#page-content {
+	min-height: 100vh;
+	// width: 100%;
+	scroll-margin-top: 4rem;
+	background: white;
+	// position: relative;
+	z-index: 1;
+}
+
+
+
+
