@@ -39,7 +39,7 @@
 /////////////////////////////
 import { defineProps, ref,toRefs, onMounted } from 'vue';
 // Import WEB3
-import Web3 from 'web3'
+// import Web3 from 'web3'
 /////////////////////////////
 // CREATED
 /////////////////////////////
@@ -52,24 +52,24 @@ const { user } = toRefs(props);
 let account = ref(null) 
 let connected = ref(false);
 
-const web3 = new Web3(Web3.givenProvider || 'http://localhost:8080');
-const accounts = await web3.eth.requestAccounts();
+// const web3 = new Web3(Web3.givenProvider || 'http://localhost:8080');
+// const accounts = await web3.eth.requestAccounts();
 
-account = accounts[0];
+// account = accounts[0];
 /////////////////////////////
 // METHODS
 /////////////////////////////
-function connect() {
-	// this connects to the wallet
-	if (window.ethereum) { // first we check if metamask is installed
-		window.ethereum.request({ method: 'eth_requestAccounts' }).then(() => {
-			console.log('aman')
-			connected.value = true; // If users successfully connected their wallet
-		});
-	}
-}
+// function connect() {
+// 	// this connects to the wallet
+// 	if (window.ethereum) { // first we check if metamask is installed
+// 		window.ethereum.request({ method: 'eth_requestAccounts' }).then(() => {
+// 			console.log('aman')
+// 			connected.value = true; // If users successfully connected their wallet
+// 		});
+// 	}
+// }
 
-/////////////////////////////
+// /////////////////////////////
 // MOUNTED
 /////////////////////////////
 onMounted(() => {

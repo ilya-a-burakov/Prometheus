@@ -1,9 +1,9 @@
 <template>
 	<div class="">
-		<p class="mn-small t-semi p-big">Избранное</p>
+		<p class="mn-small t-semi p-big">Favorites</p>
 		<hr class="mn-semi">
 		<div class="grid-layout">
-			 <p v-if="(favorites.length == 0)" style="padding-top: 1.5rem;"><i>У вас еще нет товаров в избранном. Может стоит что-нибудь добавить?</i></p>
+			<p v-if="(favorites.length == 0)" style="padding-top: 1.5rem;"><i>You don't have any items in your favorites yet. Maybe something worth adding?</i></p>
 			<ProductCard v-if="favorites" v-for="product in favorites" :product="product" :key="product"></ProductCard>
 		</div>
 	</div>
@@ -14,7 +14,8 @@
 // COMPONENT DEPENDENCIES
 /////////////////////////////
 import { defineProps, toRefs } from 'vue';
-import ProductCard from '@/components/client/blocks/ProductCard.vue';
+
+import ProductCard from 'prometheus/components/client/blocks/ProductCard.vue';
 
 
 /////////////////////////////
