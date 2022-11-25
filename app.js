@@ -66,7 +66,11 @@ export function _createApp() {
       }, 
       // INPUT GLOBALS
       updateInputText (object, property, event) {
-        var element = (event.target.files) ? event.target.files : event.target.value
+        if (event.target) {
+          var element = (event.target.files) ? event.target.files : event.target.value
+        } else {
+          var element = event
+        }
         store.commit('updateInputText', {object, property, element})
       },
       setInputText (object, property, event) {

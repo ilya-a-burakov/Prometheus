@@ -26,6 +26,15 @@
 	const props = defineProps(
 	  ['obj','label','prop','value','textarea','placeholder']
 	)
+
+  function updateInputText (object, property, event) {
+    if (event.target) {
+      var element = (event.target.files) ? event.target.files : event.target.value
+    } else {
+      var element = event
+    }
+    store.commit('updateInputText', {object, property, element})
+  }
 </script>
 
 <style lang="scss">

@@ -20,6 +20,10 @@ time, mark, audio, video, textarea {
   vertical-align: baseline; 
 }
 
+li {
+    list-style: none;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
@@ -43,7 +47,9 @@ table {
   border-spacing: 0; }
 
 header, select, input, span, label, textarea {
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+  font-family: inherit; 
+}
 
 a, a:link, a:focus, a:visited, a:active {
   text-decoration: none; 

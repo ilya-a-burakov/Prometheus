@@ -30,10 +30,10 @@
 
 <script setup>
 	// Import components
-import { default as SignIn } from '@/components/global/popups/auth/SignIn.vue'
-import { default as SignUp } from '@/components/global/popups/auth/SignUp.vue'
-import { default as SignUpCode } from '@/components/global/popups/auth/SignUpCode.vue'
-import { default as SignUpPass } from '@/components/global/popups/auth/SignUpPass.vue'
+import { default as SignIn } from 'prometheus/components/global/popups/auth/SignIn.vue'
+import { default as SignUp } from 'prometheus/components/global/popups/auth/SignUp.vue'
+import { default as SignUpCode } from 'prometheus/components/global/popups/auth/SignUpCode.vue'
+import { default as SignUpPass } from 'prometheus/components/global/popups/auth/SignUpPass.vue'
 // Import libs
 import { computed, onMounted } from 'vue'
 import { useStore } from 'vuex'
