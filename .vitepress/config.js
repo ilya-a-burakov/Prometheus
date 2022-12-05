@@ -1,5 +1,6 @@
 export default {
   outDir: './dist',
+  appearance: false,
   title: 'Prometheus Framework',
   description: 'Doucmentation for Prometheus Framework by OZ DAO',
   

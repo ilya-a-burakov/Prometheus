@@ -9,7 +9,7 @@
 			<p class="mn-big t-transp p-big">Enter your phone number and password entered during registration:</p> 
 
 			<div class="mn-small input-tel input">
-				<InputPhone  :obj="'user'" :prop="'phone'" :value="user.phone"/>
+				<!-- <InputPhone  :obj="'user'" :prop="'phone'" :value="user.phone"/> -->
 				<input  maxlength="17" type="tel" class="b-center input-text input"  :placeholder="'Enter phone'" @input="updateInputTel( 'user', 'phone', $event)" :value="user.phone">
 				<!-- <div class="input-status"></div> -->
 			</div>

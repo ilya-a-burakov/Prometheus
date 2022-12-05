@@ -1,3 +1,5 @@
+# Text
+
 <script setup>
 	import InputText from '/components/global/elements/InputText.vue'
 
