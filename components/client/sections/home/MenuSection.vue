@@ -1,7 +1,7 @@
 <template>
 	<section id="main-menu" class="section">
 		<ul class="cols-4 grid-1">
-			<MenuBlock url="souvenirs" name="Souvenirs" description="Pins, magnets" />
+			<MenuBlock url="souvenirs" name="Buds" description="Pins, magnets" />
 			<MenuBlock url="dishes" name="Dishes" description="Plates, cups" />
 			<MenuBlock url="pets" name="For Pets" description="Bowls and collars" />
 			<MenuBlock @click="store.commit('toggleBackCall')" name="Book a workshop" description="For children and adults" />

@@ -1,6 +1,8 @@
 # Carousel
 
-<script setup>
+Add text and example of carousel
+
+<!-- <script setup>
 	import InputText from '/components/global/elements/InputText.vue'
 
 	let example = {
@@ -12,3 +14,4 @@
 <b>{{ example }}</b>
 
 <InputText :obj="'example'" :prop="'name'"    :value="example.name"   label="Name"    placeholder="Example"   class="mn-r-semi"/>
+ -->

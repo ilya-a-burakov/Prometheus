@@ -1,6 +1,6 @@
 <template>
 	<div id="search"  v-if="search.current.length !== 0 " class="search-wrapper">
-		<h2 class="mn-big" >Поиск</h2>
+		<h2 class="mn-big" >Search</h2>
 		<div v-if="loading" class="loading">
       Loading...
     </div>
@@ -9,7 +9,7 @@
       {{ error }}
     </div>
 
-    <p class="mn-big" v-if="products" >Всего {{ declOfNum(searchResult.length, [' найден', ' найдено', ' найдено']) }} {{searchResult.length}} {{ declOfNum(searchResult.length, [' товар', ' товара', ' товаров']) }}</p>
+    <p class="mn-big" v-if="products" >Found {{searchResult.length}} positions</p>
 		<div v-if="products"  class="mn-big grid-layout">
 			<ProductCard v-for="product in searchResult" :product="product" :key="product"></ProductCard>
 		</div>
@@ -23,7 +23,7 @@ import ProductCard from '@/components/client/blocks/ProductCard.vue'
 /////////////////////////////
 import { defineProps, toRefs, ref, computed,onMounted } from 'vue';
 import { useStore } from 'vuex'
-	import { useRoute, useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 	// Module Created
 	const route = useRoute()
 	const router = useRouter()
@@ -67,10 +67,17 @@ router.afterEach((to, from, next) => {
   }
 
 })
+   
 /////////////////////////////
 // CREATED
 /////////////////////////////
 const store = useStore()
+
+onMounted(() => {
+	// alert('hello')
+	fetchData()
+});
+
 
 const search = computed(() => store.state.products.search)
 
@@ -86,12 +93,6 @@ const searchResult = computed(() => {
 /////////////////////////////
 // MOUNTED
 /////////////////////////////
-onMounted(() => {
-	// alert('hello')
-	fetchData()
-});
-
-
 </script>
 
 <style lang="scss">

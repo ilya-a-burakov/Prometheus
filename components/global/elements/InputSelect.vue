@@ -12,15 +12,15 @@
 	  </select>
   </label>
 
-  <div  class="input-select input">
-		<!-- Selected option -->
+<!--   <div  class="input-select input">
+		Selected option
     <li @click="toggleMenu()" class="flex-center flex-nowrap flex selected_option" v-if="selectedOption.name !== ''">
       {{ value }}
       <span class="caret"></span>
     </li>
 
     <li @click="toggleMenu()" class="flex-center flex-nowrap flex selected_option" v-if="selectedOption.name === ''">
-      <!-- <span>{{placeholderText.value}}</span> -->
+      <span>{{placeholderText.value}}</span>
       <span>Please select value</span>
       <span class="caret"></span>
     </li>
@@ -32,7 +32,7 @@
             </a>
         </li>
     </ul>
-  </div>
+  </div> -->
 </template>
 
 

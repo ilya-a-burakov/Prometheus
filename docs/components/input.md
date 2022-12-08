@@ -1,5 +1,5 @@
 # Input
-
+[[toc]]
 
 ## Input Text
 <script setup>
@@ -9,8 +9,22 @@
 		name: 'Example'
 	}
 </script>
+<InputText :obj="'example'" :prop="'name'"    :value="example.name"   label="Name"    placeholder="Example"/>
 
+### Data
+::: info Store
+{{ example }}
+:::
 
-<b>{{ example }}</b>
+### Code 
+```html
+<InputText 
+	:obj="'example'" 
+	:prop="'name'"    
+	:value="example.name"   
+	label="Name"    
+	placeholder="Example"
+/>
+```
 
-<InputText :obj="'example'" :prop="'name'"    :value="example.name"   label="Name"    placeholder="Example"   class="mn-r-semi"/>
+## Input Select
