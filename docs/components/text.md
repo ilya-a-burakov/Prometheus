@@ -1,14 +1,20 @@
 # Text
 
-<script setup>
-	import InputText from '/components/global/elements/InputText.vue'
+## Headings
+::: info Examples
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+:::
 
-	let example = {
-		name: 'Example'
-	}
-</script>
+## Paragraph
+::: info Examples
+<p class='p-big'>Big paragraph</p>
+<p>Regular paragraph</p>
+<p class='p-small'>Small paragraph</p>
+:::
 
-
-<b>{{ example }}</b>
-
-<InputText :obj="'example'" :prop="'name'"    :value="example.name"   label="Name"    placeholder="Example"   class="mn-r-semi"/>
+## Lines
+<span>Regular line</span>

@@ -4,11 +4,11 @@
 $transparent:   rgba(0,0,0,0);
 // Main and secondary colors
 $main:      #2266FF; 
-$light-main:  rgba($main, 0.1);
 $second:    #FCD714;
+// Main tons
+$light-main:  rgba($main, 0.1);
 // Black and white colors
-$dark:      #242424;
-$navy: 			#eef2f6;  
+$dark:      #242424; 
 $grey:      #F7F7F7; 
 $light:     #F4F7FF; 
 $white:     #fff;
@@ -24,34 +24,32 @@ $white:     #fff;
 .i-main-s { stroke: $main }
 // Border Color Clasess
 .br-l-dark 			{ border: 1px solid rgba($dark, 0.1) }
-.br-right-dark  	{ border-right: 1px solid rgba($dark, 0.1) }
+.br-right-dark  { border-right: 1px solid rgba($dark, 0.1) }
 .br-bot-dark  	{ border-bottom: 1px solid rgba($dark, 0.1) }
-.br-l-main 				{ border: 1px solid rgba($main, 0.1) }
+.br-l-main 			{ border: 1px solid rgba($main, 0.1) }
 .br-light  			{ border: 1px solid $light }
 .br-bot-light  	{ border-bottom: 1px solid $light }
-.br-t-white { border: 1px solid rgba($white, 0.1); }
-
+.br-t-white 		{ border: 1px solid rgba($white, 0.1); }
 // Background Color Clasess
 .bg-l-main  { background: $light-main; }
 .bg-main  { background: $main; }
 .bg-dark  { background: $dark; }
-.bg-navy  { background: $navy; }
 .bg-grey  { background: $grey; }
 .bg-light { background: $light; }
-.bg-card { background: #F7F7F7; }
+.bg-card 	{ background: #F7F7F7; }
 .bg-card-blue { background: #eef2f6; }
 .bg-white   { background: $white; }
 .bg-t-white { background: rgba($white,0.05); }
 .bg-transp  { background: rgba($white,0); }
 // 2.SIZE VARIABLES //
-$extra:   5rem;
-$big:   2.5rem; 
-$semi:    1.5rem;
-$medium:  1.25rem;
-$regular:   1rem;
-$small:   0.75rem;
-$thin:    0.5rem;
-$extra-thin:    0.25rem;
+$extra:   		5rem;
+$big:   			2.5rem; 
+$semi:    		1.5rem;
+$medium:  		1.25rem;
+$regular: 		1rem;
+$small:   		0.75rem;
+$thin:    		0.5rem;
+$extra-thin: 	0.25rem;
 // Icon Clasess
 .i-big    	{ width: $extra * 2;  height: $extra * 2; }
 .i-semi   	{ width: $big * 3;    height: $big * 3; }
@@ -81,7 +79,6 @@ $extra-thin:    0.25rem;
 .pd-t-small { padding-top: $small;  } 
 .pd-t-thin  { padding-top: $thin;   } 
 .pd-t-zero  { padding-top: 0;   }  
-
 // Padding Clasess bottom
 .pd-b-extra   { padding-bottom: $extra;  }
 .pd-b-big   { padding-bottom: $big;  }
@@ -91,7 +88,6 @@ $extra-thin:    0.25rem;
 .pd-b-small { padding-bottom: $small;  } 
 .pd-b-thin  { padding-bottom: $thin;   } 
 .pd-b-zero  { padding-bottom: 0;   }  
-
 // Padding Clasess Right
 .pd-r-extra   { padding-right: $extra;  }
 .pd-r-big   { padding-right: $big;  }
@@ -105,7 +101,6 @@ $extra-thin:    0.25rem;
 .pd-thin-big{ padding: $thin $big; }
 .pd-small-big{ padding: $small $big; }
 .pd-semi-big{ padding: $semi $big; }
-
 // Margin Classes
 .mn-extra   { margin-bottom: $extra;  }
 .mn-big   { margin-bottom: $big;    }
@@ -139,7 +134,7 @@ $extra-thin:    0.25rem;
 .radius-medium 	{	border-radius: $regular * 2 }
 .radius-regular {	border-radius: $regular }
 // Width Clasess
-.w-100 { width: 100% !important; }
+.w-100{ width: 100% !important; }
 .w-80 { width: 80% !important; }
 .w-75 { width: 75% !important; }
 .w-66 { width: 66% !important; }
@@ -156,26 +151,24 @@ $extra-thin:    0.25rem;
 .transition-cubic 	{ transition: all 0.33s cubic-bezier(.31,.79,.24,.92); }
 
 // 3. TEXT VARIABLES
-// $font: Avenir;
+$font: 'Avenir Next';
 // Headers
-
 .tx-extra   { padding: $extra;  }
-.tx-big   { padding: $big;  }
-.tx-semi  { padding: $semi;   } 
+.tx-big   	{ padding: $big;  }
+.tx-semi  	{ padding: $semi;   } 
 .tx-medium  { padding: $medium; }
 .tx-regular { padding: $regular;}
-.tx-small { padding: $small;  } 
-.tx-thin  { padding: $thin;   } 
-.tx-zero  { padding: 0;   } 
-
-h1 {font-weight: 500; font-size: 3.5rem ; line-height: 4rem; letter-spacing: -0.1rem; }
-h2 {font-weight: 500; font-size: 3rem; line-height: 1.125; }
-h3 {font-weight: 500; font-size: 2rem; line-height: 1.25; }
+.tx-small 	{ padding: $small;  } 
+.tx-thin  	{ padding: $thin;   } 
+.tx-zero  	{ padding: 0;   } 
+// Font Styles
+h1 {font-weight: 500; font-size: 3.5rem ; line-height: 4rem; 	letter-spacing: -0.1rem; }
+h2 {font-weight: 500; font-size: 3rem; 		line-height: 1.125; }
+h3 {font-weight: 500; font-size: 2rem; 		line-height: 1.25; }
 h4 {font-weight: 700; font-size: 1.75rem; line-height: 1.125; letter-spacing: 0.1em; text-transform: uppercase; }
-h5 {font-weight: 600; font-size: 1rem; line-height: 24px; letter-spacing: 0.1em; text-transform: uppercase; }
-b { font-weight: 700}
-
-
+h5 {font-weight: 600; font-size: 1rem; 		line-height: 24px; 	letter-spacing: 0.1em; text-transform: uppercase; }
+b  {font-weight: 700}
+// Class for Font Style
 .h1 				{font-weight: 500; font-size: 80px; 		line-height: 1.00; letter-spacing: -0.1rem; }
 .h1-product {font-weight: 500; font-size: 1.25rem; 	line-height: 1.50; letter-spacing: 0; }
 .h2 				{font-weight: 500; font-size: 2.25rem; 	line-height: 1.3;  letter-spacing: -0.05em; }
@@ -183,69 +176,47 @@ b { font-weight: 700}
 .h4 				{font-weight: 700; font-size: 1.75rem; 	line-height: 1.25; letter-spacing: 0.1em; text-transform: uppercase; }
 .h5 				{font-weight: 600; font-size: 1rem; 		line-height: 1.50; letter-spacing: 0.1em; text-transform: uppercase;}
 .h6 				{font-weight: 600; font-size: 1rem; 		line-height: 1.50; white-space: normal; text-transform: revert; line-height: 1; font-weight: 600; letter-spacing: 0;}
-
-.uppercase {text-transform: uppercase;}
-.small-underline {display: block; font-size: 0.875rem; color: #8A8A8A; text-decoration: underline; }
-.underline {text-decoration: underline; }
-.line-through {text-decoration: line-through;  }
-
-
+// Text decoration
+.uppercase 				{text-transform: uppercase;}
+.small-underline 	{display: block; font-size: 0.875rem; color: #8A8A8A; text-decoration: underline; }
+.underline 				{text-decoration: underline; }
+.line-through 		{text-decoration: line-through;  }
+// Typogragy Styles
 span.label  	{font-weight: 500; font-size: 24px; line-height: 32px; letter-spacing: 0.1em; text-transform: uppercase; }
 span.cursive 	{font-weight: 700; color: #2266FF }
 p           	{font-style: normal; font-weight: normal; font-size: 1rem; line-height: 1.5; }
 .small     		{font-style: normal; font-weight: normal; font-size: 18px; line-height: 32px; }
 .p-small     	{font-size: 0.875rem;		line-height: 1.25rem; }
-// .p-small     	{font-size: 0.875rem;		line-height: 1.5rem;	font-family: Inter; }
 .p-medium     {font-size: 1rem;				line-height: 1.5rem;}
 .p-big     		{font-size: 1.25rem;		line-height: 1.25;	font-weight: 400;	text-transform: revert; letter-spacing: 0; }
 // Block align
-.b-center { margin: 0 auto;}
+.b-center 	{ margin: 0 auto;}
 // Text align
-.t-left   { text-align: left; }
+.t-left   	{ text-align: left; }
 .t-center   { text-align: center; }
-.t-right  { text-align: right; }
+.t-right  	{ text-align: right; }
 // Linehegiht
-.t-lh-1 { line-height: 1}
-.t-lh-15 { line-height: 1.5}
-.t-lh-2 { line-height: 2}
+.t-lh-1 		{ line-height: 1}
+.t-lh-15 		{ line-height: 1.5}
+.t-lh-2 		{ line-height: 2}
 // Font weights
-.t-bold   {font-weight: 900;}
-.t-demi   {font-weight: 700;}
-.t-semi   {font-weight: 600;}
-.t-medium {font-weight: 500;}
-.t-regular {font-weight: 300;}
-.t-light  {font-weight: 200;}
-// Round colors
-.Belii 	 	{ background: white !important; border: 1px solid rgba(0,0,0,0.1) }
-.CHernii,.CHyornii	{ background: #242424 !important;  }
-.Krasnii 	{ background: #BD324C !important}
-.Rozovii 	{ background: #FF7EE3 !important;  }
-.Sinii  	{ background: #799EFF !important;  }
-.Zelyonii,.Zelenii { background: #C8E37A !important;  }
-.ZHyoltii { background: #F8D350 !important;  }
-.Bezhevii { background: #F5EFD7 !important;  }
-.Goluboi	{ background: #DAF0FC !important;  }
-.Vinnii		{ background: #F7C0C0 !important;  }
-
-.Biryuza	{ background: #30D5C8 !important;  }
-.Mulititsvet 	{ background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) !important}
-.Lilovii 	{ background: #DB7093 !important;  }
-.Oranzhevii  	{ background: #ED760E !important;  }
-.Grafit { background: #474A51 !important;  }
-.Nyudovii { background: #FBCEB1 !important;  }
-.Haki { background: #78866B !important;  }
-
+.t-bold   	{font-weight: 900;}
+.t-demi   	{font-weight: 700;}
+.t-semi   	{font-weight: 600;}
+.t-medium 	{font-weight: 500;}
+.t-regular 	{font-weight: 300;}
+.t-light  	{font-weight: 200;}
 // 4. BREAKPOINTS
 $super-ultra-tiny-flip-phone-max: 240px;
-$flip-phone-max: 320px;
-$phone-portrait-max: 321px;
-$phone-landscape-max: 640px;
-$tablet-portrait-min: 641px;
-$tablet-portrait-max: 768px;
-$tablet-landscape-min: 769px;
-$tablet-landscape-max: 1024px;
-$desktop-min: 1025px;
-$desktop-max: 1440px;
-$xl-desktop-min: 1441px;
-$xl-desktop-max: 1920px;
-$xxl-desktop-min: 1921px;
+$flip-phone-max: 									320px;
+$phone-portrait-max: 							321px;
+$phone-landscape-max: 						640px;
+$tablet-portrait-min: 						641px;
+$tablet-portrait-max: 						768px;
+$tablet-landscape-min: 						769px;
+$tablet-landscape-max: 						1024px;
+$desktop-min: 										1025px;
+$desktop-max: 										1440px;
+$xl-desktop-min: 									1441px;
+$xl-desktop-max: 									1920px;
+$xxl-desktop-min: 								1921px;

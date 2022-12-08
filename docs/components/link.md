@@ -1,14 +1,5 @@
 # Link
 
-<script setup>
-	import InputText from '/components/global/elements/InputText.vue'
+For navigation we use &lt;a> tag and &lt;router-link> tag. 
 
-	let example = {
-		name: 'Example'
-	}
-</script>
-
-
-<b>{{ example }}</b>
-
-<InputText :obj="'example'" :prop="'name'"    :value="example.name"   label="Name"    placeholder="Example"   class="mn-r-semi"/>
+<a href="#">Example link</a>
