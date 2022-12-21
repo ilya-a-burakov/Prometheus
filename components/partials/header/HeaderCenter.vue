@@ -49,7 +49,7 @@
 				font-weight: 700;
 			}
 
-			a { color: #2266FF; }
+			a { color: #00ff88; }
 
 			&:last-of-type {
 				text-align: right;

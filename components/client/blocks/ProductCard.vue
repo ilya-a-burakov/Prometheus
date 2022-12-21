@@ -34,7 +34,7 @@
 	<!-- Arrow on hover -->
 	<svg @click="router.push({name: 'Product', params: { id: product.id } })" class="arrow-next" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<circle class="circle_bg" r="26" transform="matrix(-1 0 0 1 26 26)" fill="#F4F7FF"/>
-		<path class="arrow_in_circle" fill="#2266FF" fill-rule="evenodd" clip-rule="evenodd" d="M30.6548 26.8334H18.5V25.1667H30.6548L25.4107 19.9227L26.5893 18.7441L33.8452 26.0001L26.5893 33.256L25.4107 32.0775L30.6548 26.8334Z" />
+		<path class="arrow_in_circle" fill="#00ff88" fill-rule="evenodd" clip-rule="evenodd" d="M30.6548 26.8334H18.5V25.1667H30.6548L25.4107 19.9227L26.5893 18.7441L33.8452 26.0001L26.5893 33.256L25.4107 32.0775L30.6548 26.8334Z" />
 	</svg>
 
 	</div>
@@ -99,7 +99,7 @@
 	&:hover {
 		cursor: pointer;
 
-		.h5, .price { color: #2266FF; }
+		.h5, .price { color: #00ff88; }
 
 		.arrow-next { 
 			bottom: 0rem;
@@ -111,7 +111,7 @@
 			}
 
 			.circle_bg {
-				fill: #2266FF
+				fill: #00ff88
 			}
 		}
 		
@@ -191,7 +191,7 @@
 
 		.p-medium { display: block; font-weight: 600; font-size: 1.25rem; 	}
 
-		.price { white-space: nowrap; color: #2266FF; &:first-of-type{ margin-top: 0.5rem; }}
+		.price { white-space: nowrap; color: #00ff88; &:first-of-type{ margin-top: 0.5rem; }}
 
 		.sale-price { text-decoration: line-through; margin-left: 0.5rem; font-size: 1rem; line-height: 1.25;  }
 

@@ -129,10 +129,10 @@ function logout() {
     }
     
     &-active {
-      color: #2266FF;
+      color: #00ff88;
       background: white;
 
-      svg { opacity: 1; path { fill: #2266FF;}  }
+      svg { opacity: 1; path { fill: #00ff88;}  }
     }
 
   }

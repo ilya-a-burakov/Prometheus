@@ -141,17 +141,17 @@
 				<!-- Products section -->
 				<div v-if="!route.params.url" class="mn-big grid-layout">
 					<ProductCard v-for="product in products" :product="product" :key="product" @click="router.push({name: 'Product', params: { id: product.id } })" ></ProductCard>
-					<button v-if="store.state.products.filteredPrice.length > store.state.products.pagination.page * store.state.products.pagination.perPage" @click="loadMoreProduct()" class="b-center button-loads button">Show more</button>
+					<button v-if="store.state.products.filteredPrice.length > store.state.products.pagination.page * store.state.products.pagination.perPage" @click="loadMoreProduct()" class="mn-center button-loads button">Show more</button>
 				</div>
 
 				<div v-if="route.params.url && !route.params.id" class="mn-big grid-layout">
 					<ProductCard v-for="product in productsCategory2" :product="product" :key="product" @click="router.push({name: 'Product', params: { id: product.id } })" ></ProductCard>
-					<button v-if="productsCategory.length > store.state.products.pagination.page * store.state.products.pagination.perPage" @click="loadMoreProduct()" class="b-center button-loads button">Show more</button>
+					<button v-if="productsCategory.length > store.state.products.pagination.page * store.state.products.pagination.perPage" @click="loadMoreProduct()" class="mn-center button-loads button">Show more</button>
 				</div>
 
 				<div v-if="route.params.id" class="mn-big grid-layout">
 					<ProductCard v-for="product in productsSubCategory2" :product="product" :key="product" @click="router.push({name: 'Product', params: { id: product.id } })" ></ProductCard>
-					<button v-if="productsSubCategory.length > store.state.products.pagination.page * store.state.products.pagination.perPage" @click="loadMoreProduct()" class="b-center button-loads button">Show more</button>
+					<button v-if="productsSubCategory.length > store.state.products.pagination.page * store.state.products.pagination.perPage" @click="loadMoreProduct()" class="mn-center button-loads button">Show more</button>
 				</div>
 				
 			</div>
@@ -381,7 +381,7 @@
 						img, input, span { transition: all 0.2s ease; }
 						.checkbox-active {
 							img { opacity:1}
-							input { background: #2266FF; margin-right: 0.5rem;}
+							input { background: #00ff88; margin-right: 0.5rem;}
 						}
 						.round {
 							display: block;
@@ -397,11 +397,11 @@
 							cursor: pointer;
 
 							span:first-of-type {
-								color: #2266FF
+								color: #00ff88
 							} 
 
 							input {
-								// background: rgba(#2266FF,0.1);
+								// background: rgba(#00ff88,0.1);
 							}
 						}
 

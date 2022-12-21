@@ -2,6 +2,7 @@
 	<div class="">
 		<p class="mn-small t-semi p-big">My data</p>
 		<hr class="mn-semi">
+		<InputText :obj="'auth'" :prop="'state.user.phone'" 		:value="user.phone" 		placeholder="Phone number" class="mn-small"/>
 
 		<div class="w-100 mn-r-small mn-small">
 			<p class="mn-small w-100">
@@ -18,7 +19,7 @@
 				>
 				<p class="w-100 p-medium">*Contact support to change</p>
 			</div>
-		</div>
+		</div> 
 
 		<div class="flex-nowrap flex">
 			<label class="w-50 mn-r-small mn-small">
@@ -96,8 +97,8 @@
 
 			</label>
 
-		</div>
-
+		</div> 
+		
 		<p class="mn-small">Click save to save your changes.</p>
 		<a @click="updateUser(user)" class="w-33 button">Save</a>
 	</div>
@@ -107,8 +108,11 @@
 /////////////////////////////
 // COMPONENT DEPENDENCIES
 /////////////////////////////
-	import { defineProps, toRefs } from 'vue';
-	import { useStore } from 'vuex'
+import InputText  from 'prometheus/components/global/elements/InputText.vue'
+import ButtonSend  from 'prometheus/components/global/elements/ButtonSend.vue'
+import { defineProps, toRefs } from 'vue';
+// State
+import * as Store from '@/store';
 /////////////////////////////
 // HELPERS
 /////////////////////////////
@@ -116,7 +120,6 @@
 /////////////////////////////
 // CREATED
 /////////////////////////////
-	const store = useStore()
 
 	const props = defineProps({
 		user: Object,
@@ -129,7 +132,7 @@
 /////////////////////////////
 	function updateUser(user) {
 		console.log(user)
-		store.dispatch("users/updateUser", user)
+		// store.dispatch("users/updateUser", user)
 	}
 
 /////////////////////////////

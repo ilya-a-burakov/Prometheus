@@ -138,7 +138,7 @@ function orderProducts (items) {
 
 		font-size: 1.5rem;
 
-		background: #2266FF;
+		background: #00ff88;
 		color: white;
 
 	}

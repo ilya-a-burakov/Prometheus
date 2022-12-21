@@ -129,7 +129,7 @@
           font-size: 0.875rem; 
         }
         a { 
-          color: #2266FF; 
+          color: #00ff88; 
         }
       }
       

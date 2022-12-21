@@ -1,9 +1,22 @@
+// Basic
 @import 'reset';
 @import 'config';
+// Layout
 @import 'typography';
 @import 'layout';
-@import 'main';
 @import 'responsive';
+// Structural
+@import 'components/breadcrumbs';
+// Components
+@import 'components/button';
+@import 'components/input';
+@import 'components/block';
+@import 'components/item';
+@import 'components/line';
+@import 'components/card';
+@import 'components/popup';
+// Overrides
+@import 'main';
 
 :root {
 	--vp-c-white: #fff;

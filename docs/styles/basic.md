@@ -18,7 +18,7 @@ Variables used for colors inside the config. For now, only the white theme is su
 ```scss
 	$transparent:   rgba(0,0,0,0);
 	// Main and secondary colors
-	$main:      #2266FF; 
+	$main:      #00ff88; 
 	$second:    #FCD714;
 	// Main tons
 	$light-main:  rgba($main, 0.1);
@@ -195,14 +195,14 @@ Variable for font name and styles for typography. Headings, plain text, text dec
 	.line-through 		{text-decoration: line-through;  }
 	// Typogragy Styles
 	span.label  	{font-weight: 500; font-size: 24px; line-height: 32px; letter-spacing: 0.1em; text-transform: uppercase; }
-	span.cursive 	{font-weight: 700; color: #2266FF }
+	span.cursive 	{font-weight: 700; color: #00ff88 }
 	p           	{font-style: normal; font-weight: normal; font-size: 1rem; line-height: 1.5; }
 	.small     		{font-style: normal; font-weight: normal; font-size: 18px; line-height: 32px; }
 	.p-small     	{font-size: 0.875rem;		line-height: 1.25rem; }
 	.p-medium     {font-size: 1rem;				line-height: 1.5rem;}
 	.p-big     		{font-size: 1.25rem;		line-height: 1.25;	font-weight: 400;	text-transform: revert; letter-spacing: 0; }
 	// Block align
-	.b-center 	{ margin: 0 auto;}
+	.mn-center 	{ margin: 0 auto;}
 	// Text align
 	.t-left   	{ text-align: left; }
 	.t-center   { text-align: center; }

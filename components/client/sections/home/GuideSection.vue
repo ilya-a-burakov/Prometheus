@@ -85,7 +85,7 @@ export default {
         line-height: 1;
       }
 
-      a { color: #2266FF; text-decoration: underline; }
+      a { color: #00ff88; text-decoration: underline; }
     }
 
   .button { margin: 0 auto; }

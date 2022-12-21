@@ -13,7 +13,7 @@
         <a target="_blank"  :href="blogpost.url">
           <span class="mn-r-thin uppercase">Читать полностью</span>
           <svg width="15" height="15" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6548 8.8334H0.5V7.16673H12.6548L7.41074 1.92265L8.58925 0.744141L15.8452 8.00006L8.58925 15.256L7.41074 14.0775L12.6548 8.8334Z" fill="#2266FF"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6548 8.8334H0.5V7.16673H12.6548L7.41074 1.92265L8.58925 0.744141L15.8452 8.00006L8.58925 15.256L7.41074 14.0775L12.6548 8.8334Z" fill="#00ff88"/>
           </svg>
 
         </a>
@@ -76,12 +76,12 @@
       }
 
       p { opacity: 0.5}
-      a { display: flex; color: #2266FF; img {margin-left: 0.5rem;} }
+      a { display: flex; color: #00ff88; img {margin-left: 0.5rem;} }
 
     }
   }
 
-  .button { margin: 0 auto; background: white; color: #2266FF; border: 1px solid #2266FF;  }
+  .button { margin: 0 auto; background: white; color: #00ff88; border: 1px solid #00ff88;  }
 }
 
 @media screen and (max-width: 480px) {

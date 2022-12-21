@@ -1,0 +1,59 @@
+@import '../config';
+
+// //////////////////////////////////////// 
+// POPUPS
+// //////////////////////////////////////// 
+// POPUPS
+.popup-wrapper {
+	display: flex;
+	position: fixed;
+
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	height: 100%;
+
+	left: 0;
+	top: 0;
+
+	z-index: 40;
+
+	.popup {
+		position: absolute;
+		height: auto;
+		padding: 2rem;
+		width: 24rem;
+		border-radius: 2rem;
+		overflow: hidden;
+
+		color: white;
+		background: black;
+
+		z-index: 40;
+	}
+}
+
+.color-overlay {
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	height: 100%;
+
+	background: rgba(0,0,0,0.0);
+	pointer-events: none;
+
+	z-index: 29;
+
+	transform: scale(1.5);
+
+	transition: all 0.5s cubic-bezier(.31,.79,.24,.92);
+
+	&.active {
+		background: rgba(#000,0.25);
+		pointer-events: all;
+	}
+}

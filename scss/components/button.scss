@@ -1,0 +1,264 @@
+@import '../config';
+
+button[disabled] {background: grey; &:hover {background: grey; } }
+
+.button {
+	display: flex;
+	width: fit-content;
+
+	padding: 1rem 1.75rem;
+	border-radius: 3rem;
+	background-color: #00ff88;
+
+	transform: scale(1);
+	opacity: 1;
+
+	align-items: center;
+	justify-content: center;
+	
+	color: black;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 500;
+	letter-spacing: 5%;
+
+	transition: all 0.33s ease;
+ 
+	&:hover {
+		background: $second;
+
+		opacity: 1;
+
+		color: $white;
+		
+		cursor: pointer;
+	}
+
+	&:active {
+		transform: scale(0.95);
+	}
+
+	&-small {
+		padding: 0.5rem 0.75rem;
+		border-radius: 0.5rem;
+		height: fit-content;
+	}
+
+	&-square {
+		height: 2.5rem;
+		min-width: 2.5rem;
+
+		padding: 1rem;
+		border-radius: 0.5rem;
+		font-size: 1.125rem;
+	}
+
+	&-close-popup {
+		position: absolute;
+
+		right: 0;
+		top: 0;
+
+		width: 3rem;
+		height: 3rem;
+
+		background: transparent;
+
+		padding: 0;
+
+		border-radius: 0;
+
+		img {
+			width: 33%;
+		}
+	}
+
+	&-delete {
+		&:hover {
+			background: red;
+		}
+	}
+
+	&-grey {
+		color: $dark;
+		background-color: #F7F7F7;
+	}
+
+	&-sort {
+		height: 2.5rem;
+
+		padding: 0.5rem 1.25rem;
+
+		text-transform: none;
+		font-size: 1rem;
+		color: $dark;
+		background-color: #F7F7F7;
+	}
+
+	&-active {
+		background: #00ff88;
+		color: white;
+		&:hover {
+			background: #00ff88;
+			color: rgba(255,255,255,0.75);
+
+		}
+	}
+
+	
+
+	
+	&-filter {
+		height: 2.5rem;
+
+		padding: 0;
+		border-radius: 0.5rem;
+		font-size: 1.125rem;
+
+		color: $dark;
+		background: white;
+	}
+
+	&-disabled {
+		color: rgba(0,0,0,0.5);
+
+		&:hover {
+			color: rgba(0,0,0,0.5);
+		}
+		&:active {
+			pointer-events: none;
+			transform: scale(1,1);
+		}
+	}
+	&-active {
+		background: #00ff88;
+		color: white;
+		&:hover {
+			background: #00ff88;
+			color: rgba(255,255,255,0.75);
+
+		}
+	}
+	&-reset-filter {
+		width: 100%;
+		text-transform: uppecase;
+		height: 3.75rem;
+
+		background: transparent;
+		color: #00ff88;
+
+		border-top: 1px solid rgba(0,0,0,0.1);
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+		&:hover {
+			background: #00ff88;
+			color: rgba(255,255,255,0.75);
+
+		}
+	}
+	
+	&-icon {
+		background: transparent;
+		box-shadow: none;
+		border-radius: 0;
+		padding: 0;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}	
+	
+	
+	&-link      {
+		color: rgba(0, 0, 0, 0.5);
+		font-size: 1.125rem;
+		display: flex;
+		align-items: center;
+		font-weight: 600;
+
+		&-blue {color: #2495FF;}
+		
+		&-black{color: rgba(0, 0, 0, 0.5);}
+		
+		&-cream {color: #DBADAA; text-align: left; font-weight: 600; letter-spacing: 0;}
+		
+	}
+
+	&-otr-link {
+		display: inline-flex;
+		margin-top: 0.25rem;
+		align-items: center;
+		color: #000;
+
+		img { margin-right: 0.5rem;}
+	}
+	
+	&-cart {
+		display: inline-flex;
+		color: #000;
+		height: 3rem;
+		width: 3rem;
+		font-weight: 700;
+		width: fit-content;
+		font-size: 1.5rem;
+		color: #00ff88;
+		background: #FAF7F3;
+		text-transform: none;
+		padding: 0.75rem 1rem;
+		border-radius: 4rem;
+
+		&:hover {
+			background: #00ff88;
+			color: white;
+			opacity: 1;
+
+			cursor: pointer;
+		}
+	}
+
+	&-cart-big {
+		display: inline-flex;
+		color: #000;
+		font-weight: 700;
+		width: fit-content;
+		background: #FFE500;
+		text-transform: none;
+		font-size: 2rme;
+		padding: 1.5rem 2rem;
+		border-radius: 2rem;
+	}
+
+	&-blog {
+		padding: 0.75rem 1rem;
+		background-color: #2495FF;
+		color: #fff;
+		border-radius: 0.375rem;
+		font-size: 1.125rem;
+		text-transform: uppercase;
+		width: fit-content;
+	}
+
+	&-nav-footer{
+		color: #000;
+		font-size: 0.875rem;
+		font-weight: 700; display: flex;
+		align-items: center;
+			svg {margin-right: 0.5rem;}}
+
+	&-inst {
+		background: radial-gradient(179.06% 43.44% at -16.75% 7.2%, #3771C8 0%, #3771C8 12.8%, rgba(102, 0, 255, 0) 100%),
+		radial-gradient(92.18% 99.11% at 26.56% 107.7%, #FFDD55 0%, #FFDD55 10%, #FF543E 50%, #C837AB 100%);
+		color: white;
+		font-size: 1.125rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 0.75rem 0.75rem;
+		border-radius: 0.5625rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: fit-content;
+		box-shadow: 4px 4px 24px -12px rgba(201, 163, 163, 0.5);
+		img {margin-right: 0.5rem}
+	}
+}

@@ -1,16 +1,18 @@
 <template>
-	<label class="mn-small input-text-label">
+	<label class="input-text-label">
     <span class="t-transp p-small">{{label}}</span>
     <input v-if="!textarea"
-      @input="updateInputText(obj, prop, $event)" 
-      :value="value" 
-      :placeholder="placeholder ? placeholder : 'Please fiil'"
+      @click.stop
+      @input="updateInputText(prop, content, $event)" 
+      :value="prop[content]" 
+      :placeholder="placeholder ? placeholder : 'Please fill'"
       class="input-text input"
     />
     <textarea v-if="textarea"
-      @input="updateInputText(obj, prop, $event)" 
-      :value="value" 
-      :placeholder="placeholder ? placeholder : 'Please fiil'"
+      @click.stop
+      @input="updateInputText(prop, content, $event)" 
+      :value="prop[content]" 
+      :placeholder="placeholder ? placeholder : 'Please fill'"
       class="input-textarea input-text input"
     />
   </label>
@@ -18,22 +20,28 @@
 
 
 <script setup="props">
-	import { defineProps,computed } from 'vue'
-	import { useStore } from 'vuex'
+	import { computed, ref } from 'vue'
+  import * as Store from '@/store';
 
-
-	const store = useStore()
 	const props = defineProps(
-	  ['obj','label','prop','value','textarea','placeholder']
+	  ['obj','label','prop','value','content','textarea','placeholder']
 	)
 
-  function updateInputText (object, property, event) {
+  const data = ref(props)
+
+  function updateInputText (prop, content, event) {
+
     if (event.target) {
       var element = (event.target.files) ? event.target.files : event.target.value
     } else {
       var element = event
     }
-    store.commit('updateInputText', {object, property, element})
+
+    prop[content] = element
+
+    console.log(content)
+    // console.log(element)
+    // console.log(prop)
   }
 </script>
 

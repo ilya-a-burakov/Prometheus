@@ -161,7 +161,7 @@
 
   .new {
     color: white;
-    background: #2266FF;
+    background: #00ff88;
   }
 
   .block {

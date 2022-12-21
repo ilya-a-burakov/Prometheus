@@ -1,0 +1,26 @@
+@import '../config';
+
+hr {
+	width: 100%;
+	height: 1px;
+	background: rgba(0,0,0,0.1);
+	margin: 0;
+	border: none;
+
+	&.absolute {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}
+
+hr.section-divider-vertical {
+	height: 100%;
+	width: 1px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,0.1);
+	margin: 0;
+	border: none;
+}

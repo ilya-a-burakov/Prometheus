@@ -5,17 +5,7 @@
 				<!-- Close Popup -->
 				<button @click="store.commit('toggleBackCall')" class="button-close-popup button"><img src="@/assets/icons/cross.svg"></button>
 				<!-- Popup Header -->
-				<h2 class="mn-semi">Book a workshop</h2>
-				<!-- Popup Form -->
-				<div class="mn-semi">
-					<p class="mn-big t-transp p-big">Enter the phone number and our manager will contact you within 5 minutes to confirm the date and time.</p> 
-
-					<div class="mn-small input-tel input">
-						<input type="tel" class="mn-center input-text input"  :placeholder="'Enter your phone number'" @input="updateInputText( 'backcall', 'phone', $event)" :value="backcall.phone">
-					</div>
-				</div>
-				<!-- Popup Send -->
-				<ButtonSend :submit="onSubmit" :callback="afterSubmit" :validation="!!errorPhone">Call Me</ButtonSend>
+				<slot></slot>
 			</section>  
 
 			<div 
@@ -28,18 +18,13 @@
 </template>
 
 <script setup>
-	// Import components
-import InputPhone  from 'prometheus/components/global/elements/InputPhone.vue'
-import ButtonSend  from 'prometheus/components/global/elements/ButtonSend.vue'
 // Import libs
 import { computed, onMounted } from 'vue'
-import { useStore } from 'vuex'
 import { useRoute, useRouter } from 'vue-router'
 // Accessing router and store
-const store = useStore()
 const route = useRoute()
 const router = useRouter()
-// Accessing state
+// Accessing state}
 const backcall = computed(() => store.state.backcall)
 // Input Validation
 const errorPhone = computed(() => {

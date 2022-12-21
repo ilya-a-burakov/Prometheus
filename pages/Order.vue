@@ -227,7 +227,7 @@ function onSubmit() {
 	}
 
 	input:checked {
-		background: #2266FF;
+		background: #00ff88;
 	}
 
 	.round-checkmark {

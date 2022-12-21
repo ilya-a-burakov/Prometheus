@@ -52,12 +52,12 @@ function addToFavorites(product) {
   svg { path { fill: black} }
 
   &:hover {
-    svg { path { fill: #2266FF} }
+    svg { path { fill: #00ff88} }
   }
 
   &-active {
     background:  #F7F7F7;
-    svg { path { fill: #2266FF} }
+    svg { path { fill: #00ff88} }
   }
 }
 

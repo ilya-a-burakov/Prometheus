@@ -11,16 +11,13 @@
 
 <script setup="props">
 	import { defineProps,computed } from 'vue'
-	import { useStore } from 'vuex'
-
-	const store = useStore()
-	
+  import * as Store from '@/store';
 	const props = defineProps({
 	  error: Object
 	})
 
 	function closeError () {
-		store.state.error.show = false;
+		Store.global.state.error.show = false;
 		// store.commit('closeErrorNotification')
 	} 
 </script>

@@ -8,12 +8,12 @@
 		<hr class="mn-semi">
 		<div class="mn-regular flex-nowrap flex">
 			<div class="mn-r-medium w-100 pd-big bg-card">
-				<img class="mn-big" :src="require( `@/assets/icons/star.svg`)">
+				<!-- <img class="mn-big" :src="require( `@/assets/icons/star.svg`)"> -->
 				<p class="mn-small t-main p-big">324 бонуса</p>
 				<p class="t-transp">1 бонус = 1 рубль</p>
 			</div>
 			<div class="w-100 pd-big bg-card">
-				<img class="mn-big" :src="require( `@/assets/icons/clock.svg`)">
+				<!-- <img class="mn-big" :src="require( `@/assets/icons/clock.svg`)"> -->
 				<p class="mn-small p-big">278 дней</p>
 				<p class="t-transp">До окончания действия бонусов</p>
 			</div>

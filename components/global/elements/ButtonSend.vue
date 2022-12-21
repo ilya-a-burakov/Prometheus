@@ -2,8 +2,8 @@
 	<button @click="Submit" :disabled="validation" ref="button" class="w-100 button">
 
 		<transition mode="out-in" name="scale">
-			<div v-if="loading" class="loading">
-	      <img class="i-default" src="@/assets/icons/preloader.svg">
+			<div v-if="loading && !error" class="loading">
+	      <img class="i-default" src="prometheus/assets/icons/preloader.svg">
 	    </div>
 	  </transition>
     <div v-if="error" class="error">
@@ -25,10 +25,6 @@
 
 <script setup="props">
 	import { defineProps,ref } from 'vue'
-	import { useStore } from 'vuex'
-
-
-	const store = useStore()
 
 	const props = defineProps({
 	  submit: Function,

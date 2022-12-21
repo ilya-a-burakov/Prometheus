@@ -16,7 +16,7 @@
 
 <script setup="props">
 	import { defineProps,computed,ref,onMounted } from 'vue'
-	import { useStore } from 'vuex'
+	// import { useStore } from 'vuex'
 
 	const selectedOption = ref({name: ''})
 	const showMenu = ref(false)
@@ -31,7 +31,7 @@
   	{name: 'Germany'},
   ]
 
-	const store = useStore()
+	// const store = useStore()
 	const props = defineProps({
 	  obj: String,
 	  prop: String,

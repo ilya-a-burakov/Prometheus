@@ -53,7 +53,7 @@
           flex-direction: column;
           justify-content: space-between;
 
-          .button-link {color: #2266FF;}
+          .button-link {color: #00ff88;}
       }
       .col:last-of-type {
 

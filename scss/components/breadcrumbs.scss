@@ -1,0 +1,53 @@
+@import '../config';
+
+.breadcrumbs { 
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+
+
+	height: 4rem;
+
+	// border-bottom: 1px solid rgba(0,0,0,0.1);
+
+	display: flex;
+	align-items: center;
+
+	flex-wrap: nowrap;
+
+	.home {
+		height: 1rem;
+
+		path {
+			fill: #00ff88; 
+		}
+	}
+
+	.chevron {
+		height: 0.75rem;
+
+
+		path {
+			fill: #00ff88; 
+		}
+	}
+
+	a {
+		display: flex;
+		align-items: center;
+
+		flex-wrap: nowrap;
+
+		color: #00ff88; 
+
+		span {
+			margin-left: 0.5rem;
+			margin-right: 0.5rem;
+		}
+	}
+
+	.router-link-exact-active:last-of-type {
+		span {
+			color: black;
+		} 
+	}
+}

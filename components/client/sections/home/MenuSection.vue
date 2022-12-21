@@ -90,7 +90,7 @@
 
 			&:nth-child(4){
 				grid-area: col4;
-				background: #2266FF;
+				background: #00ff88;
 				color: #F4F7FF;
 				p { max-width: 50%;}
 			}
@@ -98,8 +98,8 @@
 			&:hover {
 				cursor: pointer;
 				background-repeat: no-repeat;
-				// background-color: rgba(#2266FF,0.1);
-				box-shadow: 0px 10px 32px rgba(#2266FF,0.1);
+				// background-color: rgba(#00ff88,0.1);
+				box-shadow: 0px 10px 32px rgba(#00ff88,0.1);
 
 				span:last-of-type {text-decoration: underline;}
 
@@ -110,7 +110,7 @@
 
 				&:last-of-type {
 					background: white;
-					color: #2266FF;
+					color: #00ff88;
 				}
 			}
 		}

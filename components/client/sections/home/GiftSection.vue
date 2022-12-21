@@ -31,7 +31,7 @@
 <style lang="scss">
 #gift {
     b {
-      color: #2266FF;
+      color: #00ff88;
     }
 
    .section-1-col {
@@ -39,7 +39,7 @@
     padding: 10rem 3rem;
     color: black;
     border-radius: 2rem;
-    background: #2266FF;
+    background: #00ff88;
     background-image: url("@/assets/images/backgrounds/cerificat.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,13 +48,13 @@
     .button {
       margin: 0 auto;
       background: white;
-      color: #2266ff;
+      color: #00ff88;
       // box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.05);
       // border: 1px solid #F4F7FF;
       opacity: 1;
 
       &:hover {
-         background: #2266ff;
+         background: #00ff88;
       color: white;
       }
     }

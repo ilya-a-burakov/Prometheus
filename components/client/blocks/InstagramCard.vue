@@ -61,7 +61,7 @@
         }
       span {    white-space: normal;}
 
-      a { color: #2266FF; } 
+      a { color: #00ff88; } 
     }
 
   }

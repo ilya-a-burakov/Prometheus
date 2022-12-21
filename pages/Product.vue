@@ -61,7 +61,7 @@
 							  		{{color.characteristics.value}}
 
 										<div class="tooltip-quantity">
-											<div class="arrow-up-small b-center"></div>
+											<div class="arrow-up-small mn-center"></div>
 											<div class="block">
 												<span v-if="color.quantity > 0" class="t-transp">In stock: {{color.quantity}}</span>
 												<span v-else class="t-transp">Out of stock</span>

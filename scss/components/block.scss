@@ -1,0 +1,27 @@
+// //////////////////////////////////////// 
+// BLOCKS
+// //////////////////////////////////////// 
+.display-block {
+	display: block;
+}
+
+.block {
+	display: flex;
+	position: relative;
+
+	flex-direction: row;
+
+	justify-content: flex-start;
+	align-items: center;
+
+	padding: $medium;
+	> * { flex: 1; }
+	// border: 1px solid rgba(0,0,0,0.1); 
+
+	background: white;
+	border-radius: $thin;
+
+	box-shadow: 0px 4px 16px -8px rgba($dark,0.1);
+
+	transition: 0.2s;
+}

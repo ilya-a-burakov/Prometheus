@@ -1,66 +1,50 @@
 <template>
 	<section v-if="!signin.signup" class="t-center popup">
 		<!-- Close Popup -->
-		<button @click="toggleSignInPopup()" class="button-close-popup button"><img src="@/assets/icons/cross.svg"></button>
+		<button @click="Store.auth.toggleSignInPopup()" class="button-close-popup button"><img src="@/assets/icons/cross.svg"></button>
 		<!-- Popup Header -->
-		<h2 class="mn-semi">Log In</h2>
+		<img class='mn-semi i-big' src="@/assets/images/cover.png">
+		<h4 class="mn-small">«Aliis Inserviendo Consumor»</h4>
+		<p class="mn-semi t-transp">Enter your credentials to login</p>
 		<!-- Popup Form -->
 		<div class="mn-semi">
-			<p class="mn-big t-transp p-big">Enter your phone number and password entered during registration:</p> 
-
-			<div class="mn-small input-tel input">
-				<!-- <InputPhone  :obj="'user'" :prop="'phone'" :value="user.phone"/> -->
-				<input  maxlength="17" type="tel" class="b-center input-text input"  :placeholder="'Enter phone'" @input="updateInputTel( 'user', 'phone', $event)" :value="user.phone">
-				<!-- <div class="input-status"></div> -->
-			</div>
-			<div class="input-tel input">
-				<input  maxlength="17" class="b-center input-text input"  :placeholder="'Enter password'" @input="updateInputText('user', 'password', $event)" type="password" :value="user.password">
-				<!-- <div class="input-status"></div> -->
-			</div>
+			<InputText :obj="'auth'" :prop="'state.user.phone'" 		:value="user.phone" 		placeholder="Phone number" class="mn-small"/>
+			<InputText :obj="'auth'" :prop="'state.user.password'" 	:value="user.password" 	placeholder="Password" />
 		</div>
 		<!-- Popup Send -->
-		<button @click="onSubmit" :disabled="(errorPassword) && (!!errorPhone)" class="mn-big w-100 button">Log In</button> 
-		<a @click="changeToSignUp"  class="underline b-center">Don't have an account yet? Sign up!</a> 
+		<ButtonSend :submit="onSubmit" :callback="redirectTo" class="mn-big">Send</ButtonSend>
+		<a 			@click="Store.auth.toggleSignUp()"  					class="underline mn-center">Don't have an account yet? Sign up!</a> 
 	</section>  
 </template>
 
 <script setup>
-	// Import components
-import InputPhone  from 'prometheus/components/global/elements/InputPhone.vue'
+// Import components
+import InputText  from 'prometheus/components/global/elements/InputText.vue'
+import ButtonSend  from 'prometheus/components/global/elements/ButtonSend.vue'
 // Import libs
 import { computed, onMounted } from 'vue'
-import { useStore } from 'vuex'
 import { useRoute, useRouter } from 'vue-router'
-// Accessing router and store
-const store = useStore()
+// Import state
+import * as Store from '@/store';
+// Accessing router
+// const store = useStore()
 const route = useRoute()
 const router = useRouter()
 // Accessing state
-const user = computed(() => store.state.user)
-const signin = computed(() => store.state.signin)
-// Input Validation
-const errorPhone = computed(() => {
-	return store.state.user.phone.length < 17 ? "Заполните поле телефона" : ''
-})
-const errorPassword = computed(() => {
-	return store.state.user.password.length > 4 ? "Заполните поле пароля" : ''
-})
+const signin = Store.auth.state.status.signin
+const signup = Store.auth.state.status.signin.signup
+const user = computed(() => Store.auth.state.user)
+const errorPhone = {}
+const errorPassword = {}
 // Methods
-function onSubmit() {
-  store.dispatch('users/login', store.state.user).then(() => {
-  	var path = 'Account';
+async function onSubmit() {
+  await Store.auth.login(Store.auth.state.user)
+}
 
-  	if  (route.name !== 'Home') {
-  		store.dispatch("openSignInPopup");
-			store.dispatch('resetSignIn')
-  	} else {
-			router.push({ name: 'Account'}).then(() => {
-				store.dispatch("openSignInPopup");
-				store.dispatch('resetSignIn')
-			})
-		}
-	})
-} 
+function redirectTo () {
+	router.push({ name: 'Dashboard'})
+	Store.auth.toggleSignInPopup()
+}
 </script>
 
 <style lang="scss">
