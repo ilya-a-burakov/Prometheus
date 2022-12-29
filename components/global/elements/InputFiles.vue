@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input type="file" @change="onFileChange" />
+    <input type="file" @change="onFileChange" multiple/>
     <div v-if="uploading">
       <div>Uploading {{ progress }}%</div>
       <progress :value="progress" max="100"></progress>

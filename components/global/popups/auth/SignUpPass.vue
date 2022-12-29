@@ -12,8 +12,6 @@
 				<InputText :obj="'auth'" :prop="'state.user.repeatpassword'" 		:value="user.repeatpassword" 		placeholder="Repeat password" class="mn-small"/>
 			</div>
 		</div>
-
-		<!-- <button @click="" :disabled="(errorPassword === true) || (errorRepeatPassword === true)" class="w-100 button">Sign Up</button> -->
 		<ButtonSend :submit="onSubmit" :callback="afterSubmit" >Send</ButtonSend>
 	</section>  
 </template>
@@ -25,6 +23,7 @@
 	// Import libs
 	import { computed, onMounted } from 'vue'
 	import { useRoute, useRouter } from 'vue-router'
+	
 	import * as Store from '@/store';
 	// Accessing router and store
 	const route = useRoute()
@@ -32,13 +31,6 @@
 	// Accessing state
 	const user = Store.auth.state.user
 	const routePath = computed(() => route.name)
-	// Validating form
-	const errorPassword = computed(() => {
-		// return store.state.user.password.length < 4 ? true : false
-	})
-	const errorRepeatPassword = computed(() => {
-		// return store.state.user.repeatpassword.length < 5 ? true : false
-	})
 
 	async function onSubmit() {
 		await Store.auth.signup(user)

@@ -18,7 +18,7 @@
 		height: 1rem;
 
 		path {
-			fill: #00ff88; 
+			fill: black; 
 		}
 	}
 
@@ -27,7 +27,7 @@
 
 
 		path {
-			fill: #00ff88; 
+			fill: black; 
 		}
 	}
 
@@ -37,7 +37,7 @@
 
 		flex-wrap: nowrap;
 
-		color: #00ff88; 
+		color: black; 
 
 		span {
 			margin-left: 0.5rem;
@@ -47,7 +47,7 @@
 
 	.router-link-exact-active:last-of-type {
 		span {
-			color: black;
+			color: #00ff88;
 		} 
 	}
 }

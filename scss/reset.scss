@@ -55,6 +55,10 @@ a, a:link, a:focus, a:visited, a:active {
   text-decoration: none; 
 }
 
+a:link, a:visited {
+  color: inherit;
+}
+
 // Resets for inputs
 input, textarea {
   -moz-appearance:none;

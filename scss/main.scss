@@ -21,10 +21,12 @@
 .br-bot-dark  	{ border-bottom: 	1px solid rgba($dark, 0.1) }
 .br-top-dark  	{ border-top: 		1px solid rgba($dark, 0.1) }
 .br-main 				{ border: 				1px solid rgba($main, 1) 	 }
+.br-grey 				{ border: 				1px solid rgba($grey, 1) 	 }
 .br-l-main 			{ border: 				1px solid rgba($main, 0.1) }
 .br-light  			{ border: 				1px solid $light }
 .br-bot-light  	{ border-bottom: 	1px solid $light }
 .br-t-white 		{ border: 				1px solid rgba($white, 0.2); }
+.br-white 			{ border: 				1px solid rgba($white, 1.0); }
 // Brand Border
 .br-youtube 		{ border: 				1px solid $youtube; }
 .br-telegram 		{ border: 				1px solid $telegram; }
@@ -152,10 +154,41 @@
 .w-20 { width: 20%  !important; }
 .w-15 { width: 15%  !important; }
 .w-10 { width: 10%  !important; }
+// Props
+.w-auto { width: auto  !important; }
+.w-fit 	{ width: fit-content  !important; }
+// In rems
 // Aspects
+.max-w-66rem 	{ max-width: 66rem;} 
+.max-w-60rem 	{ max-width: 60rem;} 
+.max-w-50rem 	{ max-width: 50rem;} 
+.max-w-40rem 	{ max-width: 40rem;} 
+.max-w-33rem 	{ max-width: 33rem;} 
+.max-w-25rem 	{ max-width: 25rem;} 
+.max-w-20rem 	{ max-width: 20rem;} 
+.max-w-15rem 	{ max-width: 15rem;} 
+.max-w-10rem 	{ max-width: 10rem;} 
+.max-w-5rem 	{ max-width: 5rem;} 
+.max-w-3rem 	{ max-width: 3rem;} 
+.max-w-2rem 	{ max-width: 2rem;} 
+// Aspect ratio
 .aspect-16x9 	{ aspect-ratio: 16 / 9; }
 .aspect-4x3 	{ aspect-ratio: 4 / 3; 	}
 .aspect-1x1 	{ aspect-ratio: 1 / 1; 	}
+// //////////////////////////////////////// 
+// Interactiov
+// //////////////////////////////////////// 
+.hover_br-transp {
+	&:hover {
+		 background: rgba($white,0);
+	}
+}
+.hover_br-l-dark {
+	&:hover {
+		border: 				1px solid rgba($dark, 0.2) 
+	}
+}
+
 // Transition
 .transition-linear 	{ transition: all 0.33s linear; }
 .transition-ease 		{ transition: all 0.33s ease; }
@@ -163,6 +196,9 @@
 // //////////////////////////////////////// 
 // Layout
 // //////////////////////////////////////// 
+.o-hidden {
+	overflow: hidden;
+}
 .d-block {
 	display: block
 }
@@ -179,6 +215,14 @@
 
 	&-nojustify {
 		justify-content: flex-start;
+	}
+
+	&-h-center {
+		justify-content: center;
+	}
+
+	&-v-center {
+		align-items: center;
 	}
 
 	&-center {
@@ -217,6 +261,12 @@
 .cols-2 {display: grid; grid-template-columns: 1fr 1fr; 					gap: $big; 			}
 .cols-3 {display: grid; grid-template-columns: 1fr 1fr 1fr; 			gap: $regular; 	}
 .cols-4 {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; 	gap: $regular; 	}
+
+.cols-2-golden-ration {display: grid; grid-template-columns: 1.66fr 1.33fr;	}
+.cols-2-2_1 {display: grid; grid-template-columns: 2fr 1fr;	}
+.cols-2-1_2 {display: grid; grid-template-columns: 1fr 2fr;	}
+.cols-2-1_3 {display: grid; grid-template-columns: 1fr 3fr;	}
+
 // Gaps
 .gap-extra 			{ gap: $extra; }
 .gap-big 				{ gap: $big; }

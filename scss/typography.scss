@@ -16,13 +16,13 @@
 .tx-thin  	{ padding: $thin;   } 
 .tx-zero  	{ padding: 0;   		} 
 // Font Styles
-h1,.h1  { font-weight: 500; font-size: 4.50rem; 	line-height: 1.125; letter-spacing: -0.1rem; 	text-transform: none;				}
-h2,.h2  { font-weight: 500; font-size: 3.00rem; 	line-height: 1.125; letter-spacing: -0.0rem;	text-transform: none;				}
-h3,.h3  { font-weight: 500; font-size: 2.50rem; 	line-height: 1.125; letter-spacing: -0.0rem;	text-transform: none;				}
-h4,.h4  { font-weight: 700; font-size: 1.5rem; 		line-height: 1.125; letter-spacing: +0.0rem; 	text-transform: uppercase;	}
-h5,.h5 	{ font-weight: 600; font-size: 1.25rem; 	line-height: 1.125;	letter-spacing: -0.0rem; 	text-transform: none;				}
+h1,.h1  { font-weight: 500; font-size: 4.500rem; 	line-height: 1.125; letter-spacing: -0.1rem; 	text-transform: none;				}
+h2,.h2  { font-weight: 500; font-size: 3.000rem; 	line-height: 1.125; letter-spacing: -0.0rem;	text-transform: none;				}
+h3,.h3  { font-weight: 500; font-size: 2.000rem; 	line-height: 1.125; letter-spacing: -0.0rem;	text-transform: none;				}
+h4,.h4  { font-weight: 700; font-size: 1.325rem; 	line-height: 1.125; letter-spacing: +0.0rem; 	text-transform: uppercase;	}
+h5,.h5 	{ font-weight: 600; font-size: 1.000rem; 	line-height: 1.125;	letter-spacing: -0.0rem; 	text-transform: none;				}
 // Typogragy Styles
-		.p-small     	{ font-weight: 400;				font-size: 0.75rem;		line-height: 1.000; }
+		.p-small     	{ font-weight: 400;				font-size: 0.75rem;		line-height: 1.500; }
 p, 	.p-medium     { font-weight: 400;				font-size: 1.00rem;		line-height: 1.500	}
 		.p-big     		{ font-weight: 400; 			font-size: 1.50rem;		line-height: 1.500;	letter-spacing: +0.0rem;	}
 
@@ -35,10 +35,11 @@ a:active  { opacity: 0.75 }
 .link-inherit {	color: inherit;} 
 .link-inherit:hover   { color: #00ff88; cursor: pointer;  svg { path { fill:  #00ff88 } } } 
 
-.link {	color: #00ff88 !important; svg { path { fill:  #00ff88 }} }
+.link {	color: #00ff88; svg { path { fill:  #00ff88 }} }
+.link-black { color: black; }
 .link:hover   { cursor: pointer; text-decoration: underline; } 
 
-.router-link-active {	span { color: inherit; } &:hover {	cursor: initial; } }
+.router-link-exact-active {	color: #00ff88 !important; span { color: inherit; } &:hover {	cursor: initial; } }
 // Text align
 .t-left   	{ text-align: left; 	}
 .t-center   { text-align: center; }
@@ -54,7 +55,15 @@ a:active  { opacity: 0.75 }
 .t-medium 	{ font-weight: 500;}
 .t-regular 	{ font-weight: 300;}
 .t-light  	{ font-weight: 200;}
+// Line height
+.lh-bold   	{ line-height: 3.000; }
+.lh-demi   	{ line-height: 2.000; }
+.lh-semi   	{ line-height: 1.500; }
+.lh-medium 	{ line-height: 1.250; }
+.lh-regular { line-height: 1.125; }
+.lh-light  	{ line-height: 1.000; }
 // Text decoration
 .uppercase 				{ text-transform: uppercase;			}
+.capitalize 				{ text-transform: capitalize;			}
 .underline 				{ text-decoration: underline; 		}
 .line-through 		{ text-decoration: line-through; }

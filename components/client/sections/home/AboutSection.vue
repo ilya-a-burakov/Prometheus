@@ -27,6 +27,7 @@
   import { computed, onMounted, reactive, toRefs } from 'vue'
   import { useStore } from 'vuex'
   import { useRoute,useRouter } from 'vue-router'
+
  
   const store = useStore()
   const route = useRoute()

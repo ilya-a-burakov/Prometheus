@@ -18,11 +18,11 @@
   
   @media screen and (max-width: $tablet-landscape-max) {
     html, body {
-      font-size: 11px;
+      font-size: 14px;
     }
   
     .section {
-      padding: 1rem;
+      padding: 3rem 2rem;
     } 
     .input-text {
       width: 100%;
@@ -45,9 +45,17 @@
        display: inherit !important;
     }
 
+    .mobile-w-100 {
+      width: 100%;
+    }
+
      // Cols
-    .cols-1,.cols-2,.cols-3,.cols-4 {display: grid !important; grid-template-columns: 1fr !important; gap: 1rem !important; }
-    .cols-2 {>  .col { width: 100% !important;  } }
+    .cols-1,.cols-2,.cols-3,.cols-4, 
+    .cols-2-2_1, .cols-2-1_2, .cols-2-1_3 {display: grid !important; grid-template-columns: 1fr !important; gap: 1rem !important; }
+    .cols-2-golden-ration, 
+
+    
+    .cols-2 { >.col { width: 100% !important;  } }
 
     .pd-extra { padding: 3rem }
     .pd-big { padding: 1.5rem }
@@ -104,23 +112,16 @@
 
     #main-menu {
       li {
-        span {
-          max-width: 12rem;
-        }
         &:nth-child(1) {
-          background-size: 40% !important;
+          background-size: 66% !important;
         }
 
         &:nth-child(2) {
-          background-size: 50% !important;
+          background-size: 66% !important;
         }
 
         &:nth-child(3) {
-          background-size: 50% !important;
-          background-position: 120% 10% !important;
-        }
-
-        &:nth-child(4) {
+          background-size: 66% !important;
         }
       }
     }
@@ -132,12 +133,19 @@
     .footer {
       text-align: center;
 
+      .logo-link {
+        img {
+          margin: 0 auto;
+          margin-bottom: 2rem;
+        }
+      }
+
       .twocols {
         column-count: 1 !important;
       }
 
       .socials {
-        display: inline-flex;
+        justify-content: center;
       }
     }
 
@@ -146,6 +154,7 @@
 
         .grid-layout {
           grid-template-columns: 1fr 1fr !important; 
+          gap: 1rem !important;
         }
       }
 
@@ -155,7 +164,7 @@
   @media screen and (max-width: $phone-landscape-max) {
       
     html, body {
-        font-size: 12px;
+        font-size: 13px;
     }	
     
     .categories {

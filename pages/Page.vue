@@ -16,7 +16,7 @@
       
       
     </div>
-    <div class="flex-nowrap flex section"> 
+    <div class="cols-2-1_2 section"> 
       <ul class="mn-r-big pd-medium menu-tabs">
         <p class="mn-medium t-semi p-medium">Information</p>
         <li  v-for="page in pages"  :class="{'product-tab-active':route.params.url === page.url}" class="product-tab">

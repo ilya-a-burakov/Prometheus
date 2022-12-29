@@ -6,7 +6,7 @@
 /////////////////////////////
 // COMPONENT DEPENDENCIES
 /////////////////////////////
-import { defineProps, toRefs } from 'vue';
+import { toRefs } from 'vue';
 
 /////////////////////////////
 // HELPERS
