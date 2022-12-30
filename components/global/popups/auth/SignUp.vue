@@ -8,7 +8,7 @@
 			<p class="mn-big t-transp p-big">We will send a registration code to your phone number</p>
 
 			<div class="input-tel input">
-				<InputText :obj="'auth'" :prop="'state.user.phone'" 		:value="user.phone" 		placeholder="Phone number" class="mn-small"/>
+				<InputText  :prop="Store.auth.state.user" :content="'phone'" 		placeholder="Phone number" class="mn-small"/>
 			</div>
 		</div>
 		<button @click="Store.auth.sendCode(user)" class="mn-big w-100 button">Submit code</button>

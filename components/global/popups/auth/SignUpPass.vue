@@ -8,8 +8,8 @@
 			<p class="mn-big t-transp p-big">We have verified your phone number. Enter your password and registration is complete.</p> 
 
 			<div class="input-tel input">
-				<InputText :obj="'auth'" :prop="'state.user.password'" 		:value="user.password" 		placeholder="Enter password" class="mn-small"/>
-				<InputText :obj="'auth'" :prop="'state.user.repeatpassword'" 		:value="user.repeatpassword" 		placeholder="Repeat password" class="mn-small"/>
+				<InputText :prop="Store.auth.state.user" :content="'password'" 				placeholder="Enter password" 	class="mn-small"/>
+				<InputText :prop="Store.auth.state.user" :content="'repeatpassword'" 	placeholder="Repeat password" class="mn-small"/>
 			</div>
 		</div>
 		<ButtonSend :submit="onSubmit" :callback="afterSubmit" >Send</ButtonSend>

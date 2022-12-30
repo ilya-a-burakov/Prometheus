@@ -8,7 +8,7 @@
 			<p class="mn-big t-transp p-big">We have sent a registration code to your phone number. Enter it in the box below:</p>
 
 			<div class="input-tel input">
-				<InputText :obj="'auth'" :prop="'state.user.code'" 		:value="user.code" 		placeholder="Code" class="mn-small"/>
+				<InputText :prop="Store.auth.state.user" :content="'code'" placeholder="Code" class="mn-small"/>
 			</div>
 			</div>
 		<button @click="Store.auth.validCode()" :disabled="!!error" class="w-100 button">Verify</button>

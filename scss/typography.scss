@@ -1,10 +1,10 @@
 @import 'config';
 
-@font-face {font-family: 'Avenir Next'; src: url("prometheus/assets/fonts/AvenirNext-Regular.woff") 	format("woff"); font-weight: 400; font-style: normal; }
-@font-face {font-family: 'Avenir Next'; src: url("prometheus/assets/fonts/AvenirNext-Medium.woff")  	format("woff"); font-weight: 500; font-style: normal; }
-@font-face {font-family: 'Avenir Next'; src: url("prometheus/assets/fonts/AvenirNext-DemiBold.woff")	format("woff"); font-weight: 600; font-style: normal; }
-@font-face {font-family: 'Avenir Next'; src: url("prometheus/assets/fonts/AvenirNext-Bold.woff")    	format("woff"); font-weight: 700; font-style: normal; }
-@font-face {font-family: 'Avenir Next'; src: url("prometheus/assets/fonts/AvenirNext-Heavy.woff")    	format("woff"); font-weight: 800; font-style: normal; }
+@font-face {font-family: 'Avenir Next'; src: url("prometheus/assets/fonts/AvenirNext-Regular.woff2") 	format("woff2"); font-weight: 400; font-style: normal; }
+@font-face {font-family: 'Avenir Next'; src: url("prometheus/assets/fonts/AvenirNext-Medium.woff2")  	format("woff2"); font-weight: 500; font-style: normal; }
+@font-face {font-family: 'Avenir Next'; src: url("prometheus/assets/fonts/AvenirNext-DemiBold.woff2")	format("woff2"); font-weight: 600; font-style: normal; }
+@font-face {font-family: 'Avenir Next'; src: url("prometheus/assets/fonts/AvenirNext-Bold.woff2")    	format("woff2"); font-weight: 700; font-style: normal; }
+@font-face {font-family: 'Avenir Next'; src: url("prometheus/assets/fonts/AvenirNext-Heavy.woff2")    format("woff2"); font-weight: 800; font-style: normal; }
 
 // Headers
 .tx-extra   { padding: $extra;  }

@@ -8,8 +8,11 @@
 		<p class="mn-semi t-transp">Enter your credentials to login</p>
 		<!-- Popup Form -->
 		<div class="mn-semi">
-			<InputText :obj="'auth'" :prop="'state.user.phone'" 		:value="user.phone" 		placeholder="Phone number" class="mn-small"/>
-			<InputText :obj="'auth'" :prop="'state.user.password'" 	:value="user.password" 	placeholder="Password" />
+
+
+
+			<InputText :prop="Store.auth.state.user" :content="'phone'" 		placeholder="Phone number" class="mn-small"/>
+			<InputText :prop="Store.auth.state.user" :content="'password'" 	placeholder="Password" />
 		</div>
 		<!-- Popup Send -->
 		<ButtonSend :submit="onSubmit" :callback="redirectTo" class="mn-big">Send</ButtonSend>
