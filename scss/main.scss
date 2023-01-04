@@ -177,7 +177,19 @@
 .aspect-1x1 	{ aspect-ratio: 1 / 1; 	}
 // //////////////////////////////////////// 
 // Interactiov
-// //////////////////////////////////////// 
+// ////////////////////////////////////////
+.hover_bg-main {
+	&:hover {
+		 background: $main;
+	}
+} 
+
+.hover_t-white {
+	&:hover {
+		color: $white;
+	}
+} 
+
 .hover_br-transp {
 	&:hover {
 		 background: rgba($white,0);
@@ -257,10 +269,12 @@
 .flex-child {&-noresize {flex: 0 } }
 
 // COLUMNS AND ROWS
-.cols-1 {display: grid; grid-template-columns: 1fr; 							gap: 0; 				}
-.cols-2 {display: grid; grid-template-columns: 1fr 1fr; 					gap: $big; 			}
-.cols-3 {display: grid; grid-template-columns: 1fr 1fr 1fr; 			gap: $regular; 	}
-.cols-4 {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; 	gap: $regular; 	}
+.cols-1 {display: grid; grid-template-columns: 1fr; 									gap: 0; 				}
+.cols-2 {display: grid; grid-template-columns: 1fr 1fr; 							gap: $big; 			}
+.cols-3 {display: grid; grid-template-columns: 1fr 1fr 1fr; 					gap: $regular; 	}
+.cols-4 {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; 			gap: $regular; 	}
+.cols-5 {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 	gap: $regular; 	}
+.cols-6 {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 	gap: $regular; 	}
 
 .cols-2-golden-ration {display: grid; grid-template-columns: 1.66fr 1.33fr;	}
 .cols-2-2_1 {display: grid; grid-template-columns: 2fr 1fr;	}

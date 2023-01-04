@@ -60,13 +60,17 @@
     .pd-extra { padding: 3rem }
     .pd-big { padding: 1.5rem }
 
-    .cols-4 {
+    .cols-4, .cols-5 {
       grid-template-columns: 1fr 1fr !important;
       grid-template-rows: 1fr 1fr  !important; 
       gap: 1rem 1rem;
       grid-template-areas: 
         "col1 col2"
         "col3 col4" !important; 
+    }
+
+    .cols-6 {
+      grid-template-columns: 1fr 1fr 1fr!important;
     }
 
     .shop-cart {
